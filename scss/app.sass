@@ -1,0 +1,420 @@
+@import 'foundation'
+
+body
+  min-width: 320px
+
+$colorBlack: #333
+$pageBackground: #00aeef
+
+body
+  background: $pageBackground
+  color: $colorBlack
+  font-family: "Neue Helvetica W01", "Helvetica Neue", "Open Sans", Helvetica, Arial, sans-serif
+
+%large-font
+  font-size: em-calc(48px)
+  font-weight: 100
+  letter-spacing: 0.07em
+  line-height: 1.25em
+
+  @media #{$small-only}
+    font-size: em-calc(24px)
+    font-weight: 200
+    line-height: 1.67em
+
+%medium-font
+  font-size: em-calc(24px)
+  line-height: 1.25em
+
+  @media #{$small-only}
+    font-size: em-calc(18px)
+
+%small-font
+  font-size: em-calc(16px)
+  line-height: 1.875em
+  letter-spacing: 0.07em
+
+  @media #{$small-only}
+    font-size: em-calc(13px)
+    line-height: 1.54em
+
+%image-logo
+  background-image: url('../images/logo.png')
+  background-repeat: no-repeat
+  background-size: 215px 35px
+
+  @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)
+    background-image: url('../images/big/logo.png')
+
+%image-eye
+  background-image: url('../images/eye.png')
+  background-repeat: no-repeat
+  background-size: 30px 60px
+
+  @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)
+    background-image: url('../images/big/eye.png')
+
+%image-phone
+  background-image: url('../images/phone.png')
+  background-repeat: no-repeat
+  background-size: 30px 60px
+
+  @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)
+    background-image: url('../images/big/phone.png')
+
+%image-play
+  background-image: url('../images/play.png')
+  background-repeat: no-repeat
+  background-size: 30px 60px
+
+  @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)
+    background-image: url('../images/big/play.png')
+
+.header-block-wrapper
+  background-image: url('../images/background1.png')
+  background-position: 50% 0
+  background-repeat: repeat-x
+  background-size: cover
+  position: relative
+
+.header-block
+  background-image: url('../images/hand.png')
+  background-position: 100% 100%
+  background-repeat: no-repeat
+  height: 800px
+  position: relative
+
+  @media #{$small-only}
+    background-image: none
+    height: 650px
+
+  @media (max-width: 1005px)
+    background-position: 510px 100%
+
+  @media (max-width: 980px)
+    background-image: none
+
+  .logo-wrapper
+    @extend %small-font
+    margin: 3.5em 0 0 0
+    padding: 0
+
+    @media #{$small-only}
+      margin-top: 2em
+
+    .logo
+      @extend %image-logo
+      background-position: 0 0
+      display: block
+      height: 35px
+      overflow: hidden
+      text-indent: -9999px
+      width: 215px
+
+      @media #{$small-only}
+        margin: 0 auto
+
+  .logo-description
+    @extend %small-font
+    color: #fff
+    margin: 3em 0 0 0
+    text-decoration: bold
+
+    @media #{$small-only}
+      font-size: em-calc(13px)
+      line-height: 1.5em
+      margin-top: 2em
+      text-align: center
+
+    .logo-description-text
+      font-size: em-calc(20px)
+      line-height: 1.25em
+
+  .title
+    @extend %large-font
+    color: #fff
+    font-weight: bold
+    height: (1.25em * 3)
+    margin-top: 160px
+
+    @media (max-width: 980px)
+      text-align: center
+
+    @media #{$small-only}
+      $lineHeight: 1.3em
+      height: ($lineHeight * 3)
+      line-height: $lineHeight
+      margin-bottom: 0
+      margin-top: 100px
+      text-align: center
+
+  .small-block-wrapper
+    bottom: 0
+    left: 0
+    position: absolute
+    right: 0
+    background-color: #fff // fallback
+    background-color: rgba(255, 255, 255, 0.7)
+
+    .small-block
+      @extend %small-font
+      border: none
+      line-height: 1.7em
+      padding: 1em 0
+      text-align: center
+
+      .nowrap
+        white-space: nowrap
+
+    @media #{$small-only}
+      .small-block
+        padding: 0.5em 0
+
+.app-block
+  background-color: #949494
+  background-image: url('../images/background2.png')
+  background-position: 50% 50%
+  background-repeat: repeat-x
+  background-size: cover
+  height: 800px
+  position: relative
+
+  @media #{$small-only}
+    background-position: 50% 0
+    height: 650px
+
+  .title
+    @extend %large-font
+    color: #fff
+    font-weight: bold
+    height: (1.25em * 3)
+    margin-top: 225px
+    text-align: center
+
+    @media #{$small-only}
+      $lineHeight: 1.3em
+      height: ($lineHeight * 3)
+      line-height: $lineHeight
+      margin-bottom: 0
+      margin-top: 135px
+
+  .custom-button-wrapper
+    .custom-button
+      background: #00aeef
+      border-radius: 25px
+      color: #fff
+      display: inline-block
+      font-size: em-calc(20px)
+      font-weight: 200
+      letter-spacing: 0.07em
+      line-height: 37px
+      padding: 3px 20px 5px 10px
+      text-align: left
+      width: 250px
+
+      &:before
+        content: ""
+        display: inline-block
+        margin-left: 3px
+        margin-top: 4px
+        vertical-align: top
+        width: 42px
+
+    &.app-button
+      text-align: right
+
+      .custom-button
+        &:before
+          @extend %image-phone
+          background-position: 0 0
+          height: 30px
+
+        &:hover
+          color: $colorBlack
+
+          &:before
+            background-position: 0 -30px
+
+    &.preview-button
+      text-align: left
+
+      .custom-button
+        &:before
+          @extend %image-eye
+          background-position: 0 0
+          height: 30px
+
+        &:hover
+          color: $colorBlack
+
+          &:before
+            background-position: 0 -30px
+
+    @media #{$small-only}
+      padding: 20px 0 0 0
+
+      .custom-button
+        font-size: em-calc(18px)
+
+      &.app-button, &.preview-button
+        text-align: center
+
+  .small-block-wrapper
+    bottom: 0
+    left: 0
+    position: absolute
+    right: 0
+    background-color: #fff // fallback
+    background-color: rgba(255, 255, 255, 0.7)
+
+    .small-block
+      @extend %small-font
+      border: none
+      line-height: 1.7em
+      padding: 1em 0
+
+    @media #{$small-only}
+      .small-block
+        padding: 0.5em 0
+
+.schedule-block
+  padding: 6em 0
+
+  @media #{$small-only}
+    padding: 2em 0 2em 0
+
+  .title
+    @extend %large-font
+    color: #fff
+    font-weight: normal
+    margin: 0
+    text-align: center
+
+  .day-title
+    color: #fff
+    font-size: em-calc(24px)
+    font-weight: normal
+    line-height: 1.25em
+    margin: 2em 0 0 0
+
+    @media #{$small-only}
+      font-size: em-calc(18px)
+
+  .event
+    @extend %small-font
+    margin: 2em 0 0 0
+
+    .event-title
+      color: #fff
+
+    .event-text
+      font-weight: bold
+
+  .schedule-event
+    background: #fff
+    margin-top: 1em
+    padding: 1.5em 1.5em
+
+    .schedule-event-title
+      @extend %medium-font
+      color: #00aeef
+
+    .schedule-event-text
+      @extend %small-font
+
+.about-block
+  background: #fff
+  border-bottom: 2px solid #e8e8e8
+
+.hiw-block
+  background: #fff
+
+.about-block,
+.hiw-block
+  padding-bottom: 90px
+
+  @media #{$small-only}
+    padding-bottom: 50px
+
+  .title
+    @extend %large-font
+    font-weight: normal
+    margin-bottom: 0
+    margin-top: 60px
+    text-align: center
+
+    @media #{$small-only}
+      margin-top: 30px
+
+  .image
+    background-position: 50% 0
+    background-repeat: no-repeat
+    height: 120px
+    margin-top: 30px
+    width: 100%
+
+    @media #{$small-only}
+      margin-top: 20px
+
+    &.image-audio-guide
+      background-image: url('../images/audio_guide.png')
+    &.image-cms
+      background-image: url('../images/cms.png')
+    &.image-opas
+      background-image: url('../images/opas.png')
+
+  .image2
+    background-position: 50% 0
+    background-repeat: no-repeat
+    height: 100px
+    margin-top: 30px
+    width: 100%
+
+    @media #{$small-only}
+      margin-top: 20px
+
+    &.image-record
+      background-image: url('../images/record.png')
+    &.image-publish
+      background-image: url('../images/publish.png')
+    &.image-announce
+      background-image: url('../images/announce.png')
+
+  .small-title
+    color: #00aeef
+    font-size: em-calc(24px)
+    font-weight: normal
+    letter-spacing: 0.07em
+    margin-bottom: 25px
+    margin-top: 15px
+    text-align: center
+
+  .text
+    font-size: 16px
+    line-height: 1.9em
+    padding: 0 10px
+
+    @media #{$small-only}
+      padding: 0
+
+.footer-block
+  .title
+    @extend %large-font
+    color: #fff
+    margin-top: 60px
+    margin-bottom: 80px
+    text-align: center
+
+    @media #{$small-only}
+      margin-top: 30px
+      margin-bottom: 40px
+
+    .bold
+      font-weight: normal
+
+    a
+      color: #fff
+      text-decoration: none
+
+      &:hover
+        text-decoration: underline
