@@ -4745,6 +4745,7 @@ body {
       line-height: 1.25em; } }
 
 .opening-block .opening-header, .opening-block .opening-about-link, .opening-block .opening-description-text, .tour-block .tour-text, .tour-block .tour-buttons-item--download, .tour-block .tour-buttons-item--preview, .tour-block .tour-description-text {
+  -webkit-text-size-adjust: 100%;
   font-size: 16px;
   letter-spacing: 0.07em;
   line-height: 1.5em; }
