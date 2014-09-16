@@ -5,5 +5,5 @@ Promo sites
 ## Apply changes
 
 ``` sh
-$ sass scss/app.sass > css/app.css; slimrb index.html.slim > index.html
+$ sass scss/app.sass > assets/css/app.css; slimrb -po format=:html5 index.html.slim > index.html
 ```

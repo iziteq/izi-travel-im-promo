@@ -6,12 +6,17 @@ $mediaRetina: 'only screen and (-Webkit-min-device-pixel-ratio: 1.5), only scree
 $colorBlack: #333
 $pageBackground: #00aeef
 
+// Base
+html
+  -webkit-text-size-adjust: none
+
 body
   background: $pageBackground
   color: $colorBlack
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif
   min-width: 320px
 
+// Font styles
 %large-font
   font-size: 48px
   font-weight: normal
@@ -23,14 +28,14 @@ body
     line-height: 1.25em
 
 %medium-font
-  font-size: em-calc(24px)
+  font-size: 19px
+  letter-spacing: 0.07em
   line-height: 1.25em
 
   @media #{$small-only}
-    font-size: em-calc(18px)
+    font-size: 15px
 
 %small-font
-  -webkit-text-size-adjust: 100%
   font-size: 16px
   letter-spacing: 0.07em
   line-height: 1.5em
@@ -38,6 +43,7 @@ body
   @media #{$small-only}
     font-size: 14px
 
+// Images
 %image-logo
   background-image: url('../images/logo.png')
   background-position: 50% 50%
@@ -52,173 +58,164 @@ body
   background-repeat: no-repeat
   background-size: 30px 60px
 
-  @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)
-    background-image: url('../images/big/eye.png')
-
 %image-phone
   background-image: url('../images/phone.png')
   background-repeat: no-repeat
   background-size: 30px 60px
 
-  @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)
-    background-image: url('../images/big/phone.png')
+%image-details
+  background-image: url('../images/details_icon.png')
+  background-repeat: no-repeat
+  background-size: 18px 23px
 
+// Blocks
 .opening-block
-  background-image: url('../images/pattern.png')
+  background-image: url('../images/bg_image.jpg')
   background-position: 50% 0
-  padding-bottom: 200px
-  position: relative
+  background-repeat: no-repeat
+  background-size: cover
 
-  @media #{$mediaRetina}
-    background-image: url('../images/pattern@2x.png')
-    background-size: 280px 260px
-
-  @media #{$small-only}
-    padding-bottom: 120px
-
-  .opening-header-wrapper
-    display: table
-    width: 100%
-
-  .opening-header
-    @extend %small-font
-    background-image: url('../images/star.png')
-    background-position: 0 0
+  .opening-phone-bg
+    background-image: url('../images/phone_bg.png')
+    background-position: 50% 100%
     background-repeat: no-repeat
-    color: #fff
-    display: table-cell
-    height: 50px
-    padding: 0 0 0 50px
-    text-align: center
-    vertical-align: middle
-
-    @media #{$mediaRetina}
-      background-image: url('../images/star@2x.png')
-      background-size: 40px 50px
-
-  .opening-logo
-    @extend %image-logo
-    height: 58px
-    margin-top: 74px
+    min-height: 580px
 
     @media #{$small-only}
-      background-size: contain
-      margin-top: 37px
+      background-image: none
+      min-height: 0
+
+  .opening-header
+    padding: 40px 0 0
+
+    @media #{$small-only}
+      padding: 20px 0 0
+
+  .opening-header-logo
+    background-image: url('../images/logo.png')
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    height: 35px
+    overflow: hidden
+    text-indent: -9999px
+    width: 215px
+
+    @media #{$small-only}
+      width: 100%
+
+  .opening-header-text
+    @extend %medium-font
+    color: #fff
+    padding: 15px 0 0
+
+    @media #{$small-only}
+      padding: 10px 0 0
+
+  .opening-header-buttons
+    padding: 10px 0 0
+    text-align: right
+
+    @media #{$small-only}
+      text-align: center
+
+  %opening-header-button
+    @extend %small-font
+    background-color: #fff
+    border-radius: 50px
+    color: #222
+    display: inline-block
+    line-height: 30px
+    padding: 0 25px 0 0px
+    text-align: left
+    margin-left: 15px
+
+    @media #{$small-only}
+      margin: 10px
+
+    &:before
+      background-position: 12px 50%
+      background-repeat: no-repeat
+      content: ''
+      display: inline-block
+      height: 30px
+      vertical-align: top
+      width: 35px
+
+  .opening-header-button-en
+    @extend %opening-header-button
+
+    &:before
+      background-image: url('../images/gb_flag.png')
+
+  .opening-header-button-fr
+    @extend %opening-header-button
+
+    &:before
+      background-image: url('../images/fr_flag.png')
+
+  .opening-header-button-ru
+    @extend %opening-header-button
+
+    &:before
+      background-image: url('../images/ru_flag.png')
 
   .opening-title
     @extend %large-font
     color: #fff
-    margin: 90px 0 0 0
-    text-align: center
+    margin: 90px 0 50px
 
     @media #{$small-only}
-      margin: 45px 0 0 0
-
-  .opening-about
-    text-align: center
-    margin-top: 40px
-
-    @media #{$small-only}
-      margin-top: 20px
-
-  .opening-about-link
-    @extend %small-font
-    background: #fc702b
-    border-radius: 50px
-    color: #fff
-    display: inline-block
-    padding: 8px 25px
-
-    &:hover
-      color: #000
-
-  .opening-description
-    background: #ddd
-    background: rgba(0, 0, 0, 0.3)
-    bottom: 0
-    left: 0
-    position: absolute
-    right: 0
-
-  .opening-description-text
-    @extend %small-font
-    color: #fff
-    padding: 10px 0
-    text-align: center
+      margin: 30px 0 35px
+      text-align: center
 
 .tour-block
-  background-image: url('../images/moscow.jpg')
-  background-position: 50% 0
-  background-repeat: no-repeat
-  background-size: cover
-  padding-bottom: 160px
-  position: relative
-
-  @media #{$small-only}
-    padding-bottom: 180px
+  .tour-logo
+    background-image: url('../images/fiamp_logo.png')
+    background-position: 50% 50%
+    background-repeat: no-repeat
+    background-size: contain
+    height: 148px
+    margin: 50px 0 0
 
   .tour-title
     @extend %large-font
     color: #fff
     margin: 50px 0 0 0
+    text-align: center
 
     @media #{$small-only}
       margin: 25px 0 0 0
-      text-align: center
-
-  .tour-text
-    @extend %small-font
-    color: #fff
-    margin: 80px 0 0 0
-
-    @media #{$small-only}
-      margin: 30px 0 0 0
-
-    p
-      -webkit-text-size-adjust: 100%
-      margin: 0 0 10px 0
-
-      @media #{$small-only}
-        margin: 0 0 5px 0
 
   .tour-buttons
-    margin: 35px 0 0 0
+    margin: 50px 0 0 0
+    text-align: center
 
     @media #{$small-only}
-      margin: 5px 0 0 0
-      text-align: center
+      margin: 25px 0 0 0
 
   %tour-buttons-item
     @extend %small-font
-    background-color: #fc702b
+    background-color: #fff
     border-radius: 50px
-    color: #fff
+    color: #222
     display: inline-block
     line-height: 46px
-    margin: 15px 20px 0 0
+    margin: 10px 25px
     padding: 0 25px 0 10px
     text-align: left
-    width: 205px
 
     @media #{$small-only}
-      margin: 15px 10px 0 10px
-
-    &:hover
-      color: #000
+      margin: 10px 15px
 
     &:before
-      background-position: 0 0
+      background-position: 0 -30px
       content: ''
       display: inline-block
       height: 30px
       margin-left: 3px
       margin-top: 7px
       vertical-align: top
-      width: 50px
-
-    &:hover
-      &:before
-        background-position: 0 -30px
+      width: 40px
 
   .tour-buttons-item--download
     @extend %tour-buttons-item
@@ -232,19 +229,75 @@ body
     &:before
       @extend %image-eye
 
+  .tour-text
+    @extend %small-font
+    color: #fff
+    padding: 0 15px
+    text-align: center
+    margin: 60px 0 0
+
+    @media #{$small-only}
+      margin: 30px 0 0 0
+
+    p
+      @extend %small-font
+
   .tour-description
-    background: #ddd
-    background: rgba(255, 255, 255, 0.6)
-    bottom: 0
-    left: 0
-    position: absolute
-    right: 0
+    border: 1px solid #fff
+    width: 100%
+    padding: 30px 60px
+    margin: 60px 0 100px
+
+    @media #{$small-only}
+      padding: 15px
+
+  .tour-description-short
+    display: none
 
   .tour-description-text
     @extend %small-font
-    color: #000
-    padding: 10px 0
+    color: #fff
+
+    p
+      @extend %small-font
+
+    ol
+      padding-left: 35px
+
+      @media #{$small-only}
+        padding-left: 25px
+
+  .tour-description-button-wrapper
     text-align: center
+    margin: 25px 0 0
+
+    @media #{$small-only}
+      margin: 15px 0 0
+
+  .tour-description-button
+    @extend %small-font
+    border-radius: 50px
+    border: 1px solid #fff
+    color: #fff
+    display: inline-block
+    line-height: 46px
+    margin: 10px 25px
+    padding: 0 25px 0 10px
+    text-align: left
+
+    @media #{$small-only}
+      margin: 10px 15px
+
+    &:before
+      @extend %image-details
+      background-position: 5px 4px
+      content: ''
+      display: inline-block
+      height: 30px
+      margin-left: 3px
+      margin-top: 7px
+      vertical-align: top
+      width: 40px
 
 .about-block
   background: #fff

@@ -1,9 +1,7 @@
 doctype html
-html lang="en"
+html lang="ru"
   head
     meta charset="utf-8"
-    meta content="authenticity_token" name="csrf-param"
-    meta content="5ikq8RoshvYnk8h77tsQTZdH7Zn/QjWIAuZZzL7olas=" name="csrf-token"
     meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
 
     // Open Graph Properties
@@ -13,55 +11,72 @@ html lang="en"
     meta property="og:description" content="Интермузей-2014. Мастер-класс специалистов сервиса IZI.travel 4 июня в 14:30-16:00 (стенд #5.13 в секции Техномузей,минус второй этаж)."
 
     title IZI.travel. A simple and free audio guide solution.
-    link href="/assets/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"
-    link rel="stylesheet" href="css/app.css"
+    link rel="stylesheet" href="assets/css/app.css"
     / link rel="stylesheet" href="vendor/fancybox/source/jquery.fancybox.css"
-    / script type="text/javascript" src="vendor/jquery/jquery-1.9.0.min.js"
-    / script type="text/javascript" src="vendor/jquery/jquery-1.10.1.min.js"
+    script type="text/javascript" src="assets/jquery/jquery-1.9.0.min.js"
+    script type="text/javascript" src="assets/jquery/jquery-1.10.1.min.js"
     / script type="text/javascript" src="vendor/fancybox/source/jquery.fancybox.js"
-    / script type="text/javascript" src="js/app.js"
+    script type="text/javascript" src="assets/js/app.js"
 
   body
     .opening-block
-      .row
-        .columns.large-offset-1.large-10
-          .opening-header-wrapper
-            .opening-header
-              | Постоянный участник выставки Интермузей. Секция&nbsp;«Техномузей».
-          .opening-logo
-          h1.opening-title
-            | Открытая бесплатная платформа для&nbsp;создания музейных и&nbsp;городских аудиогидов
-          .opening-about
-            a.opening-about-link href="http://izi.travel/how-it-works"
-              | Узнать подробнее
-      .opening-description
+      .opening-phone-bg
+        .opening-header
+          .row
+            .columns.large-7
+              .opening-header-logo IZI.travel
+              .opening-header-text
+                | A brand new way of creating audio guides.
+                br
+                | Это просто, быстро и бесплатно!
+            .columns.large-5
+              .opening-header-buttons
+                a.opening-header-button-en href="#" English
+                a.opening-header-button-fr href="#" Français
+                /a.opening-header-button-ru href="#" Русский
         .row
-          .columns.large-offset-1.large-10
-            .opening-description-text
-              | Посетите наш стенд №5.13 на&nbsp;выставке Интермузей в секции Техномузей, 3–9 июня, ЦВЗ&nbsp;Манеж,&nbsp;Москва,&nbsp;Россия.
+          .columns.large-9
+            h1.opening-title
+              | Ознакомьтесь с&nbsp;аудиогидом по&nbsp;выставке Интермузей
     .tour-block
       .row
-        .columns.large-6
+        .columns
+          .tour-logo
+      .row
+        .columns
           h2.tour-title
             | Ознакомьтесь с&nbsp;аудиогидом по&nbsp;выставке Интермузей
-        .columns.large-6
-          .tour-text
-            p
-              | 1. Установите приложение IZI.travel
-            p
-              | 2. Найдите музей «Интермузей-2014»
-            p
-              | 3. Получите всю информацию о фестивале
+        .columns
           .tour-buttons
             a.tour-buttons-item--download href="http://izi.travel/app/2e7d7e2f-9cdf-4d36-baf5-37a7dcc26311"
-              | Загрузить
+              | Установить
             a.tour-buttons-item--preview href="http://izi.travel/browse/2e7d7e2f-9cdf-4d36-baf5-37a7dcc26311"
               | Просмотреть
-      .tour-description
-        .row
-          .columns
-            .tour-description-text
-              | Мастер-класс: «Как бесплатно создать высокотехнологичный аудиогид  для своего музея на основе открытой платформы IZI.travel», 4&nbsp;июня&nbsp;2014, 14:30–16:00, этаж&nbsp;-2, Малый зал.
+      .row
+        .columns.large-8.large-offset-2
+          .tour-text
+            p
+              | Культурная программа - прогулка с аудиогидом между двумя зданиями Третьяковской галереи, посещение экспозиции ГТГ на Крымском валу (Русское искусство ХХ века) - состоится 19 сентября в 17:00.
+            p
+              | Прогулка начнется от здания Инженерного корпуса Третьяковской галереи.
+      .row
+        .columns
+          .tour-description
+            .tour-description-short data-role="tourDescriptionShort"
+              .tour-description-text
+                | Скачайте аудиогид заранее, чтобы не беспокоиться о качестве мобильного интернета.
+              .tour-description-button-wrapper
+                a.tour-description-button data-role="tourDescriptionShow"
+                  | Узнать как
+            .tour-description-full data-role="tourDescriptionFull"
+              .tour-description-text
+                p
+                  | Скачайте аудиогид заранее, чтобы не беспокоиться о качестве мобильного интернета:
+                ol
+                  li Установите мобильное приложение IZI.travel через App Store или Google Play.
+                  li Убедитесь, что на вашем устройстве включены все средства определения положения (геолокация).
+                  li Найдите тур "Прогулка по Москве Серебряного века: Александр Головин" воспользовавшись поиском в разделе "Аудиогиды".
+                  li На странице тура нажмите кнопку "Скачать" и выберите "Все данные".
     .about-block
       .row
         .large-12.columns
