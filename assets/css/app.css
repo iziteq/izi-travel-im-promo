@@ -4796,7 +4796,7 @@ body {
     padding: 40px 0 0; }
     @media only screen and (max-width: 767px) {
       .opening-block .opening-header {
-        padding: 20px 0 0; } }
+        padding: 30px 0 0; } }
   .opening-block .opening-header-logo {
     background-image: url("../images/logo.png");
     background-position: 50% 50%;
@@ -4813,12 +4813,14 @@ body {
     padding: 15px 0 0; }
     @media only screen and (max-width: 767px) {
       .opening-block .opening-header-text {
-        padding: 10px 0 0; } }
+        padding: 15px 0 0;
+        text-align: center; } }
   .opening-block .opening-header-buttons {
     padding: 10px 0 0;
     text-align: right; }
     @media only screen and (max-width: 767px) {
       .opening-block .opening-header-buttons {
+        padding: 20px 0 0;
         text-align: center; } }
   .opening-block .opening-header-button-en, .opening-block .opening-header-button-fr, .opening-block .opening-header-button-ru {
     background-color: white;
@@ -4826,9 +4828,10 @@ body {
     color: #222222;
     display: inline-block;
     line-height: 30px;
+    margin-bottom: 15px;
+    margin-left: 15px;
     padding: 0 25px 0 0px;
-    text-align: left;
-    margin-left: 15px; }
+    text-align: left; }
     @media only screen and (max-width: 767px) {
       .opening-block .opening-header-button-en, .opening-block .opening-header-button-fr, .opening-block .opening-header-button-ru {
         margin: 10px; } }
@@ -4905,11 +4908,12 @@ body {
       margin: 30px 0 0 0; } }
 .tour-block .tour-description {
   border: 1px solid white;
-  width: 100%;
+  margin: 60px 0 100px;
   padding: 30px 60px;
-  margin: 60px 0 100px; }
+  width: 100%; }
   @media only screen and (max-width: 767px) {
     .tour-block .tour-description {
+      margin: 40px 0 60px;
       padding: 15px; } }
 .tour-block .tour-description-short {
   display: none; }
@@ -4972,7 +4976,7 @@ body {
     @media only screen and (max-width: 767px) {
       .about-block .title,
       .hiw-block .title {
-        margin-top: 30px;
+        margin-top: 40px;
         padding-bottom: 20px; } }
   .about-block .image2,
   .hiw-block .image2 {
