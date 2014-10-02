@@ -4735,15 +4735,13 @@ body {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   min-width: 320px; }
 
-.opening-block .opening-title, .tour-block .tour-title, .about-block .title,
-.hiw-block .title, .footer-block .title {
+.opening-block .opening-title, .about-block h2.title, .about-block .subtitle p, .schedule-block .title, .contact-block .title, .video-block .title, .footer-block .title {
   font-size: 48px;
   font-weight: normal;
   letter-spacing: 0.07em;
   line-height: 1.25em; }
   @media only screen and (max-width: 767px) {
-    .opening-block .opening-title, .tour-block .tour-title, .about-block .title,
-    .hiw-block .title, .footer-block .title {
+    .opening-block .opening-title, .about-block h2.title, .about-block .subtitle p, .schedule-block .title, .contact-block .title, .video-block .title, .footer-block .title {
       font-size: 24px;
       line-height: 1.25em; } }
 
@@ -4755,36 +4753,53 @@ body {
     .opening-block .opening-header-text {
       font-size: 15px; } }
 
-.opening-block .opening-header-button-en, .opening-block .opening-header-button-fr, .opening-block .opening-header-button-ru, .tour-block .tour-buttons-item--download, .tour-block .tour-buttons-item--preview, .tour-block .tour-text, .tour-block .tour-text p, .tour-block .tour-description-text, .tour-block .tour-description-text p, .tour-block .tour-description-button {
+.opening-block .opening-header-button-en, .opening-block .opening-header-button-fr, .opening-block .opening-header-button-ru, .schedule-block .event, .video-block .tour-buttons-item--download, .video-block .tour-buttons-item--preview, .video-block .small-block {
   font-size: 16px;
   letter-spacing: 0.07em;
   line-height: 1.5em; }
   @media only screen and (max-width: 767px) {
-    .opening-block .opening-header-button-en, .opening-block .opening-header-button-fr, .opening-block .opening-header-button-ru, .tour-block .tour-buttons-item--download, .tour-block .tour-buttons-item--preview, .tour-block .tour-text, .tour-block .tour-text p, .tour-block .tour-description-text, .tour-block .tour-description-text p, .tour-block .tour-description-button {
+    .opening-block .opening-header-button-en, .opening-block .opening-header-button-fr, .opening-block .opening-header-button-ru, .schedule-block .event, .video-block .tour-buttons-item--download, .video-block .tour-buttons-item--preview, .video-block .small-block {
       font-size: 14px; } }
 
-.tour-block .tour-buttons-item--preview:before {
+.video-block .tour-buttons-item--preview:before {
   background-image: url("../images/eye.png");
   background-repeat: no-repeat;
   background-size: 30px 60px; }
 
-.tour-block .tour-buttons-item--download:before {
+.video-block .tour-buttons-item--download:before {
   background-image: url("../images/phone.png");
   background-repeat: no-repeat;
   background-size: 30px 60px; }
 
-.tour-block .tour-description-button:before {
-  background-image: url("../images/details_icon.png");
+.app-download-app--apple, .app-download-app--google, .app-download-app--windows {
+  display: inline-block;
+  margin: 0px 10px 20px 0; }
+
+.app-download-app--apple {
+  background-image: url("../images/app_store.png");
   background-repeat: no-repeat;
-  background-size: 18px 23px; }
+  height: 50px;
+  width: 174px; }
+
+.app-download-app--google {
+  background-image: url("../images/google_play.png");
+  background-repeat: no-repeat;
+  height: 51px;
+  width: 154px; }
+
+.app-download-app--windows {
+  background-image: url("../images/windows_store.png");
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 196px; }
 
 .opening-block {
-  background-image: url("../images/bg_image.jpg");
+  background-image: url("../images/bg_image_mc.jpg");
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-size: cover; }
   .opening-block .opening-phone-bg {
-    background-image: url("../images/phone_bg.png");
+    background-image: url("../images/phone_bg_mc.png");
     background-position: 50% 100%;
     background-repeat: no-repeat;
     min-height: 580px; }
@@ -4851,193 +4866,215 @@ body {
     background-image: url("../images/ru_flag.png"); }
   .opening-block .opening-title {
     color: white;
-    margin: 90px 0 50px; }
+    font-weight: 500;
+    letter-spacing: 0em;
+    margin: 30px 0 50px; }
     @media only screen and (max-width: 767px) {
       .opening-block .opening-title {
         margin: 30px 0 35px;
         text-align: center; } }
-
-.tour-block .tour-logo {
-  background-image: url("../images/fiamp_logo.png");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 148px;
-  margin: 50px 0 0; }
-.tour-block .tour-title {
-  color: white;
-  margin: 50px 0 0 0;
-  text-align: center; }
-  @media only screen and (max-width: 767px) {
-    .tour-block .tour-title {
-      margin: 25px 0 0 0; } }
-.tour-block .tour-buttons {
-  margin: 50px 0 0 0;
-  text-align: center; }
-  @media only screen and (max-width: 767px) {
-    .tour-block .tour-buttons {
-      margin: 25px 0 0 0; } }
-.tour-block .tour-buttons-item--download, .tour-block .tour-buttons-item--preview {
-  background-color: white;
-  border-radius: 50px;
-  color: #222222;
-  display: inline-block;
-  line-height: 46px;
-  margin: 10px 25px;
-  padding: 0 25px 0 10px;
-  text-align: left; }
-  @media only screen and (max-width: 767px) {
-    .tour-block .tour-buttons-item--download, .tour-block .tour-buttons-item--preview {
-      margin: 10px 15px; } }
-  .tour-block .tour-buttons-item--download:before, .tour-block .tour-buttons-item--preview:before {
-    background-position: 0 -30px;
-    content: "";
-    display: inline-block;
-    height: 30px;
-    margin-left: 3px;
-    margin-top: 7px;
-    vertical-align: top;
-    width: 40px; }
-.tour-block .tour-text {
-  color: white;
-  padding: 0 15px;
-  text-align: center;
-  margin: 60px 0 0; }
-  @media only screen and (max-width: 767px) {
-    .tour-block .tour-text {
-      margin: 30px 0 0 0; } }
-.tour-block .tour-description {
-  border: 1px solid white;
-  margin: 60px 0 100px;
-  padding: 30px 60px;
-  width: 100%; }
-  @media only screen and (max-width: 767px) {
-    .tour-block .tour-description {
-      margin: 40px 0 60px;
-      padding: 15px; } }
-.tour-block .tour-description-short {
-  display: none; }
-.tour-block .tour-description-text {
-  color: white; }
-  .tour-block .tour-description-text ol {
-    padding-left: 35px; }
+  .opening-block .opening-subtitle {
+    color: white;
+    font-weight: 500;
+    letter-spacing: 0.05em; }
     @media only screen and (max-width: 767px) {
-      .tour-block .tour-description-text ol {
-        padding-left: 25px; } }
-.tour-block .tour-description-button-wrapper {
-  text-align: center;
-  margin: 25px 0 0; }
+      .opening-block .opening-subtitle {
+        margin: 30px 0 35px;
+        text-align: center; } }
+  .opening-block .adlib-block .adlib {
+    background-image: url("../images/adlib.png");
+    background-repeat: no-repeat;
+    height: 143px;
+    margin: -15px -20px 30px -20px;
+    width: 140px; }
+    .opening-block .adlib-block .adlib .top {
+      color: #00aeef;
+      display: inline-block;
+      font-weight: 500;
+      margin-top: 20px;
+      text-align: center;
+      width: 110px; }
+    .opening-block .adlib-block .adlib .bottom {
+      color: #00aeef;
+      display: inline-block;
+      font-weight: 500;
+      margin-top: 65px;
+      text-align: center;
+      width: 110px; }
+    @media only screen and (max-width: 767px) {
+      .opening-block .adlib-block .adlib {
+        display: inline-block;
+        margin-top: 0;
+        margin-bottom: 20px;
+        text-align: center; } }
   @media only screen and (max-width: 767px) {
-    .tour-block .tour-description-button-wrapper {
-      margin: 15px 0 0; } }
-.tour-block .tour-description-button {
-  border-radius: 50px;
-  border: 1px solid white;
-  color: white;
-  display: inline-block;
-  line-height: 46px;
-  margin: 10px 25px;
-  padding: 0 25px 0 10px;
-  text-align: left; }
+    .opening-block .adlib-block {
+      text-align: center; } }
   @media only screen and (max-width: 767px) {
-    .tour-block .tour-description-button {
-      margin: 10px 15px; } }
-  .tour-block .tour-description-button:before {
-    background-position: 5px 4px;
-    content: "";
-    display: inline-block;
-    height: 30px;
-    margin-left: 3px;
-    margin-top: 7px;
-    vertical-align: top;
-    width: 40px; }
+    .opening-block .app-download-description-apps {
+      text-align: center; } }
 
 .about-block {
+  background: #e8e8e8;
+  padding: 6em 0; }
+  @media only screen and (max-width: 767px) {
+    .about-block {
+      padding: 2em 0 2em 0; } }
+  .about-block h2.title {
+    background-color: white;
+    border: 10px solid white;
+    color: #00aeef;
+    font-weight: bold;
+    letter-spacing: 0em;
+    margin: 0 auto;
+    text-align: center; }
+  .about-block .subtitle {
+    padding-top: 40px; }
+    .about-block .subtitle p {
+      font-weight: 500;
+      letter-spacing: 0em;
+      margin: 0;
+      text-align: center; }
+
+.schedule-block {
+  padding: 6em 0; }
+  @media only screen and (max-width: 767px) {
+    .schedule-block {
+      padding: 2em 0 2em 0; } }
+  .schedule-block .title {
+    color: white;
+    font-weight: normal;
+    margin: 0;
+    text-align: center; }
+  .schedule-block .day-title {
+    color: white;
+    font-size: 1.5em;
+    font-weight: normal;
+    margin: 2em 0 0 0; }
+    @media only screen and (max-width: 767px) {
+      .schedule-block .day-title {
+        font-size: 1.125em; } }
+  .schedule-block .event {
+    margin: 2em 0 0 0; }
+    .schedule-block .event .event-title {
+      color: white;
+      padding: 5px 0; }
+    .schedule-block .event .event-text {
+      font-weight: bold;
+      padding: 5px 0; }
+
+.contact-block, .video-block {
   background: white;
-  border-bottom: 2px solid #e8e8e8; }
-
-.hiw-block {
-  background: white; }
-
-.about-block,
-.hiw-block {
   padding-bottom: 90px; }
   @media only screen and (max-width: 767px) {
-    .about-block,
-    .hiw-block {
+    .contact-block, .video-block {
       padding-bottom: 50px; } }
-  .about-block .title,
-  .hiw-block .title {
-    font-weight: normal;
+  .contact-block .title, .video-block .title {
+    font-weight: 500;
     margin-bottom: 0;
     margin-top: 60px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     text-align: center; }
     @media only screen and (max-width: 767px) {
-      .about-block .title,
-      .hiw-block .title {
+      .contact-block .title, .video-block .title {
         margin-top: 40px;
         padding-bottom: 20px; } }
-  .about-block .image2,
-  .hiw-block .image2 {
-    background-position: 50% 100%;
-    background-repeat: no-repeat;
-    height: 100px;
-    width: 100%; }
-    .about-block .image2.image-record,
-    .hiw-block .image2.image-record {
-      background-image: url("../images/record.png"); }
-      @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
-        .about-block .image2.image-record,
-        .hiw-block .image2.image-record {
-          background-image: url("../images/record@2x.png");
-          background-size: 73px 78px; } }
-    .about-block .image2.image-publish,
-    .hiw-block .image2.image-publish {
-      background-image: url("../images/publish.png"); }
-      @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
-        .about-block .image2.image-publish,
-        .hiw-block .image2.image-publish {
-          background-image: url("../images/publish@2x.png");
-          background-size: 78px 73px; } }
-    .about-block .image2.image-announce,
-    .hiw-block .image2.image-announce {
-      background-image: url("../images/announce.png"); }
-      @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
-        .about-block .image2.image-announce,
-        .hiw-block .image2.image-announce {
-          background-image: url("../images/announce@2x.png");
-          background-size: 82px 90px; } }
-  .about-block .small-title,
-  .hiw-block .small-title {
-    color: #00aeef;
+  .contact-block .small-title, .video-block .small-title {
+    color: silver;
     font-size: 24px;
-    font-weight: normal;
+    font-weight: 500;
     letter-spacing: 0.07em;
     margin-bottom: 25px;
     margin-top: 15px;
     text-align: center; }
     @media only screen and (max-width: 767px) {
-      .about-block .small-title,
-      .hiw-block .small-title {
+      .contact-block .small-title, .video-block .small-title {
         font-size: 16px;
         margin-bottom: 17px;
         margin-top: 15px; } }
-  .about-block .text,
-  .hiw-block .text {
+  .contact-block .person, .video-block .person {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.9em;
+    padding: 0 10px;
+    text-align: center; }
+    @media only screen and (max-width: 767px) {
+      .contact-block .person, .video-block .person {
+        padding: 0; } }
+  .contact-block .text, .video-block .text {
     font-size: 16px;
     line-height: 1.9em;
-    padding: 0 10px; }
+    padding: 0 10px;
+    text-align: center; }
     @media only screen and (max-width: 767px) {
-      .about-block .text,
-      .hiw-block .text {
+      .contact-block .text, .video-block .text {
         margin-bottom: 35px;
         padding: 0; } }
 
+.video-block {
+  padding-bottom: 40px; }
+  .video-block .video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0; }
+    .video-block .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+  .video-block .tour-buttons {
+    margin: 50px 0 0 0;
+    text-align: center; }
+    @media only screen and (max-width: 767px) {
+      .video-block .tour-buttons {
+        margin: 25px 0 0 0; } }
+  .video-block .tour-buttons-item--download, .video-block .tour-buttons-item--preview {
+    background-color: #00aeef;
+    border-radius: 50px;
+    color: white;
+    display: inline-block;
+    letter-spacing: 0em;
+    line-height: 46px;
+    margin: 10px 25px;
+    padding: 0 25px 0 10px;
+    text-align: left; }
+    @media only screen and (max-width: 767px) {
+      .video-block .tour-buttons-item--download, .video-block .tour-buttons-item--preview {
+        margin: 10px 15px; } }
+    .video-block .tour-buttons-item--download:before, .video-block .tour-buttons-item--preview:before {
+      background-position: 0 0px;
+      content: "";
+      display: inline-block;
+      height: 30px;
+      margin-left: 3px;
+      margin-top: 7px;
+      vertical-align: top;
+      width: 40px; }
+  .video-block .small-block {
+    border: none;
+    line-height: 1.7em;
+    padding: 1em 0; }
+    .video-block .small-block .nowrap {
+      white-space: nowrap; }
+  @media only screen and (max-width: 767px) {
+    .video-block .small-block {
+      padding: 0.5em 0; } }
+
+.callout-block {
+  background-color: #f0f0f0;
+  color: black;
+  padding: 30px 0 25px 0; }
+  .callout-block .title {
+    font-weight: normal;
+    letter-spacing: 0.07em;
+    line-height: 1.25em;
+    text-align: center; }
+
 .footer-block .title {
   color: white;
-  margin-top: 60px;
-  margin-bottom: 80px;
+  font-weight: 100;
+  margin: 40px 0;
   text-align: center; }
   @media only screen and (max-width: 767px) {
     .footer-block .title {
@@ -5050,3 +5087,10 @@ body {
     text-decoration: none; }
     .footer-block .title a:hover {
       text-decoration: underline; }
+
+.app-download-image {
+  width: 384px;
+  height: 478px;
+  position: absolute;
+  bottom: 0px;
+  right: -45px; }
