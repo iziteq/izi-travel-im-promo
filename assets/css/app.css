@@ -5053,6 +5053,7 @@ body {
       width: 40px; }
   .video-block .small-block {
     border: none;
+    font-size: 15px;
     line-height: 1.7em;
     padding: 1em 0; }
     .video-block .small-block .nowrap {
