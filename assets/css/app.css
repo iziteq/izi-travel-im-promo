@@ -4735,363 +4735,91 @@ body {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   min-width: 320px; }
 
-.opening-block .opening-title, .about-block h2.title, .about-block .subtitle p, .schedule-block .title, .contact-block .title, .video-block .title, .footer-block .title {
-  font-size: 48px;
+.opening-block .opening-text {
+  font-size: 38px;
   font-weight: normal;
   letter-spacing: 0.07em;
-  line-height: 1.25em; }
+  line-height: 1.5em; }
   @media only screen and (max-width: 767px) {
-    .opening-block .opening-title, .about-block h2.title, .about-block .subtitle p, .schedule-block .title, .contact-block .title, .video-block .title, .footer-block .title {
+    .opening-block .opening-text {
       font-size: 24px;
       line-height: 1.25em; } }
 
-.opening-block .opening-header-text {
-  font-size: 19px;
+.info-block .info-container .info-bold {
+  font-size: 26px;
   letter-spacing: 0.07em;
-  line-height: 1.25em; }
+  line-height: 1.3em; }
   @media only screen and (max-width: 767px) {
-    .opening-block .opening-header-text {
-      font-size: 15px; } }
+    .info-block .info-container .info-bold {
+      font-size: 17px; } }
 
-.opening-block .opening-header-button-en, .opening-block .opening-header-button-fr, .opening-block .opening-header-button-ru, .schedule-block .event, .video-block .tour-buttons-item--download, .video-block .tour-buttons-item--preview, .video-block .small-block {
+.info-block .info-container, .info-block .info-container p, .info-block .info-container ul {
   font-size: 16px;
   letter-spacing: 0.07em;
   line-height: 1.5em; }
   @media only screen and (max-width: 767px) {
-    .opening-block .opening-header-button-en, .opening-block .opening-header-button-fr, .opening-block .opening-header-button-ru, .schedule-block .event, .video-block .tour-buttons-item--download, .video-block .tour-buttons-item--preview, .video-block .small-block {
+    .info-block .info-container, .info-block .info-container p, .info-block .info-container ul {
       font-size: 14px; } }
 
-.video-block .tour-buttons-item--preview:before {
-  background-image: url("../images/eye.png");
-  background-repeat: no-repeat;
-  background-size: 30px 60px; }
-
-.video-block .tour-buttons-item--download:before {
-  background-image: url("../images/phone.png");
-  background-repeat: no-repeat;
-  background-size: 30px 60px; }
-
-.app-download-app--apple, .app-download-app--google, .app-download-app--windows {
-  display: inline-block;
-  margin: 0px 10px 20px 0; }
-
-.app-download-app--apple {
-  background-image: url("../images/app_store.png");
-  background-repeat: no-repeat;
-  height: 50px;
-  width: 174px; }
-
-.app-download-app--google {
-  background-image: url("../images/google_play.png");
-  background-repeat: no-repeat;
-  height: 51px;
-  width: 154px; }
-
-.app-download-app--windows {
-  background-image: url("../images/windows_store.png");
-  background-repeat: no-repeat;
-  height: 50px;
-  width: 196px; }
-
 .opening-block {
-  background-image: url("../images/bg_image_mc.jpg");
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  .opening-block .opening-phone-bg {
-    background-image: url("../images/phone_bg_mc.png");
-    background-position: 50% 100%;
-    background-repeat: no-repeat;
-    min-height: 580px; }
-    @media only screen and (max-width: 767px) {
-      .opening-block .opening-phone-bg {
-        background-image: none;
-        min-height: 0; } }
-  .opening-block .opening-header {
-    padding: 40px 0 0; }
-    @media only screen and (max-width: 767px) {
-      .opening-block .opening-header {
-        padding: 30px 0 0; } }
-  .opening-block .opening-header-logo {
-    background-image: url("../images/logo.png");
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    height: 35px;
+  background-image: url("../images_dgb/girl.png");
+  background-position: 50% 100%;
+  background-repeat: no-repeat; }
+  @media (max-width: 800px) {
+    .opening-block {
+      background-image: none; } }
+  .opening-block .opening-logo {
+    background-image: url("../images_dgb/logo.jpg");
+    display: block;
+    height: 17px;
+    margin-top: 30px;
     overflow: hidden;
     text-indent: -9999px;
-    width: 215px; }
-    @media only screen and (max-width: 767px) {
-      .opening-block .opening-header-logo {
-        width: 100%; } }
-  .opening-block .opening-header-text {
+    width: 95px; }
+  .opening-block .opening-text {
     color: white;
-    padding: 15px 0 0; }
-    @media only screen and (max-width: 767px) {
-      .opening-block .opening-header-text {
-        padding: 15px 0 0;
-        text-align: center; } }
-  .opening-block .opening-header-buttons {
-    padding: 10px 0 0;
-    text-align: right; }
-    @media only screen and (max-width: 767px) {
-      .opening-block .opening-header-buttons {
-        padding: 20px 0 0;
-        text-align: center; } }
-  .opening-block .opening-header-button-en, .opening-block .opening-header-button-fr, .opening-block .opening-header-button-ru {
-    background-color: white;
-    border-radius: 50px;
-    color: #222222;
-    display: inline-block;
-    line-height: 30px;
-    margin-bottom: 15px;
-    margin-left: 15px;
-    padding: 0 25px 0 0px;
-    text-align: left; }
-    @media only screen and (max-width: 767px) {
-      .opening-block .opening-header-button-en, .opening-block .opening-header-button-fr, .opening-block .opening-header-button-ru {
-        margin: 10px; } }
-    .opening-block .opening-header-button-en:before, .opening-block .opening-header-button-fr:before, .opening-block .opening-header-button-ru:before {
-      background-position: 12px 50%;
-      background-repeat: no-repeat;
-      content: "";
-      display: inline-block;
-      height: 30px;
-      vertical-align: top;
-      width: 35px; }
-  .opening-block .opening-header-button-en:before {
-    background-image: url("../images/gb_flag.png"); }
-  .opening-block .opening-header-button-fr:before {
-    background-image: url("../images/fr_flag.png"); }
-  .opening-block .opening-header-button-ru:before {
-    background-image: url("../images/ru_flag.png"); }
-  .opening-block .opening-title {
-    color: white;
-    font-weight: 500;
-    letter-spacing: 0em;
-    margin: 30px 0 50px; }
-    @media only screen and (max-width: 767px) {
-      .opening-block .opening-title {
-        margin: 30px 0 35px;
-        text-align: center; } }
-  .opening-block .opening-subtitle {
-    color: white;
-    font-weight: 500;
-    letter-spacing: 0.05em; }
-    @media only screen and (max-width: 767px) {
-      .opening-block .opening-subtitle {
-        margin: 30px 0 35px;
-        text-align: center; } }
-  .opening-block .adlib-block .adlib {
-    background-image: url("../images/adlib.png");
-    background-repeat: no-repeat;
-    height: 143px;
-    margin: -15px -20px 30px -20px;
-    width: 140px; }
-    .opening-block .adlib-block .adlib .top {
-      color: #00aeef;
-      display: inline-block;
-      font-weight: 500;
-      margin-top: 20px;
-      text-align: center;
-      width: 110px; }
-    .opening-block .adlib-block .adlib .bottom {
-      color: #00aeef;
-      display: inline-block;
-      font-weight: 500;
-      margin-top: 65px;
-      text-align: center;
-      width: 110px; }
-    @media only screen and (max-width: 767px) {
-      .opening-block .adlib-block .adlib {
-        display: inline-block;
-        margin-top: 0;
-        margin-bottom: 20px;
-        text-align: center; } }
-  @media only screen and (max-width: 767px) {
-    .opening-block .adlib-block {
-      text-align: center; } }
-  @media only screen and (max-width: 767px) {
-    .opening-block .app-download-description-apps {
-      text-align: center; } }
+    margin: 55px 0 110px 0; }
 
-.about-block {
-  background: #e8e8e8;
-  padding: 6em 0; }
-  @media only screen and (max-width: 767px) {
-    .about-block {
-      padding: 2em 0 2em 0; } }
-  .about-block h2.title {
-    background-color: white;
-    border: 10px solid white;
-    color: #00aeef;
-    font-weight: bold;
-    letter-spacing: 0em;
-    margin: 0 auto;
-    text-align: center; }
-  .about-block .subtitle {
-    padding-top: 40px; }
-    .about-block .subtitle p {
-      font-weight: 500;
-      letter-spacing: 0em;
-      margin: 0;
-      text-align: center; }
-
-.schedule-block {
-  padding: 6em 0; }
-  @media only screen and (max-width: 767px) {
-    .schedule-block {
-      padding: 2em 0 2em 0; } }
-  .schedule-block .title {
-    color: white;
-    font-weight: normal;
-    margin: 0;
-    text-align: center; }
-  .schedule-block .day-title {
-    color: white;
-    font-size: 1.5em;
-    font-weight: normal;
-    margin: 2em 0 0 0; }
+.info-block {
+  background: white; }
+  .info-block .info-container .info-first {
+    padding: 80px 60px 10px; }
     @media only screen and (max-width: 767px) {
-      .schedule-block .day-title {
-        font-size: 1.125em; } }
-  .schedule-block .event {
-    margin: 2em 0 0 0; }
-    .schedule-block .event .event-title {
-      color: white;
-      padding: 5px 0; }
-    .schedule-block .event .event-text {
-      font-weight: bold;
-      padding: 5px 0; }
-
-.contact-block, .video-block {
-  background: white;
-  padding-bottom: 90px; }
-  @media only screen and (max-width: 767px) {
-    .contact-block, .video-block {
-      padding-bottom: 50px; } }
-  .contact-block .title, .video-block .title {
-    font-weight: 500;
-    margin-bottom: 0;
-    margin-top: 60px;
-    padding-bottom: 20px;
-    text-align: center; }
+      .info-block .info-container .info-first {
+        padding: 40px 0 5px; } }
+  .info-block .info-container .info-bold {
+    border-bottom: 2px solid #00aeef;
+    border-top: 2px solid #00aeef;
+    font-style: italic;
+    padding: 15px 60px 15px; }
     @media only screen and (max-width: 767px) {
-      .contact-block .title, .video-block .title {
-        margin-top: 40px;
-        padding-bottom: 20px; } }
-  .contact-block .small-title, .video-block .small-title {
-    color: silver;
+      .info-block .info-container .info-bold {
+        padding: 10px 0 10px; } }
+  .info-block .info-container .info-second {
+    padding: 35px 60px 20px; }
+    @media only screen and (max-width: 767px) {
+      .info-block .info-container .info-second {
+        padding: 20px 0 10px; } }
+  .info-block .info-container li {
+    padding-top: 10px; }
+  .info-block .info-container ul {
+    padding-left: 30px; }
+
+.registration-block {
+  background: #f0f0f0; }
+  .registration-block .registration-container {
     font-size: 24px;
-    font-weight: 500;
-    letter-spacing: 0.07em;
-    margin-bottom: 25px;
-    margin-top: 15px;
-    text-align: center; }
-    @media only screen and (max-width: 767px) {
-      .contact-block .small-title, .video-block .small-title {
-        font-size: 16px;
-        margin-bottom: 17px;
-        margin-top: 15px; } }
-  .contact-block .person, .video-block .person {
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 1.9em;
-    padding: 0 10px;
-    text-align: center; }
-    @media only screen and (max-width: 767px) {
-      .contact-block .person, .video-block .person {
-        padding: 0; } }
-  .contact-block .text, .video-block .text {
-    font-size: 16px;
-    line-height: 1.9em;
-    padding: 0 10px;
-    text-align: center; }
-    @media only screen and (max-width: 767px) {
-      .contact-block .text, .video-block .text {
-        margin-bottom: 35px;
-        padding: 0; } }
-
-.video-block {
-  padding-bottom: 40px; }
-  .video-block .video-wrapper {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0; }
-    .video-block .video-wrapper iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%; }
-  .video-block .tour-buttons {
-    margin: 50px 0 0 0;
-    text-align: center; }
-    @media only screen and (max-width: 767px) {
-      .video-block .tour-buttons {
-        margin: 25px 0 0 0; } }
-  .video-block .tour-buttons-item--download, .video-block .tour-buttons-item--preview {
-    background-color: #00aeef;
-    border-radius: 50px;
-    color: white;
-    display: inline-block;
-    letter-spacing: 0em;
-    line-height: 46px;
-    margin: 10px 25px;
-    padding: 0 25px 0 10px;
-    text-align: left; }
-    @media only screen and (max-width: 767px) {
-      .video-block .tour-buttons-item--download, .video-block .tour-buttons-item--preview {
-        margin: 10px 15px; } }
-    .video-block .tour-buttons-item--download:before, .video-block .tour-buttons-item--preview:before {
-      background-position: 0 0px;
-      content: "";
+    line-height: 60px;
+    padding: 24px 60px; }
+    .registration-block .registration-container .link {
+      background: #fd6d3b;
+      border-radius: 3px;
+      color: white;
       display: inline-block;
-      height: 30px;
-      margin-left: 3px;
-      margin-top: 7px;
-      vertical-align: top;
-      width: 40px; }
-  .video-block .small-block {
-    border: none;
-    font-size: 15px;
-    line-height: 1.7em;
-    padding: 1em 0; }
-    .video-block .small-block .nowrap {
-      white-space: nowrap; }
-  @media only screen and (max-width: 767px) {
-    .video-block .small-block {
-      padding: 0.5em 0; } }
-
-.callout-block {
-  background-color: #f0f0f0;
-  color: black;
-  padding: 30px 0 25px 0; }
-  .callout-block .title {
-    font-weight: normal;
-    letter-spacing: 0.07em;
-    line-height: 1.25em;
-    text-align: center; }
-
-.footer-block .title {
-  color: white;
-  font-weight: 100;
-  margin: 40px 0;
-  text-align: center; }
-  @media only screen and (max-width: 767px) {
-    .footer-block .title {
-      margin-top: 30px;
-      margin-bottom: 40px; } }
-  .footer-block .title .bold {
-    font-weight: normal; }
-  .footer-block .title a {
-    color: white;
-    text-decoration: none; }
-    .footer-block .title a:hover {
-      text-decoration: underline; }
-
-.app-download-image {
-  width: 384px;
-  height: 478px;
-  position: absolute;
-  bottom: 0px;
-  right: -45px; }
+      margin-right: 20px;
+      padding: 0 30px; }
+    @media only screen and (max-width: 767px) {
+      .registration-block .registration-container {
+        padding: 15px 0;
+        font-size: 18px;
+        line-height: 35px; } }

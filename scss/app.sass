@@ -18,22 +18,22 @@ body
 
 // Font styles
 %large-font
-  font-size: 48px
+  font-size: 38px
   font-weight: normal
   letter-spacing: 0.07em
-  line-height: 1.25em
+  line-height: 1.5em
 
   @media #{$small-only}
     font-size: 24px
     line-height: 1.25em
 
 %medium-font
-  font-size: 19px
+  font-size: 26px
   letter-spacing: 0.07em
-  line-height: 1.25em
+  line-height: 1.3em
 
   @media #{$small-only}
-    font-size: 15px
+    font-size: 17px
 
 %small-font
   font-size: 16px
@@ -43,455 +43,83 @@ body
   @media #{$small-only}
     font-size: 14px
 
-// Images
-%image-logo
-  background-image: url('../images/logo.png')
-  background-position: 50% 50%
-  background-repeat: no-repeat
-
-  @media #{$mediaRetina}
-    background-image: url('../images/logo@2x.png')
-    background-size: 327px 58px
-
-%image-eye
-  background-image: url('../images/eye.png')
-  background-repeat: no-repeat
-  background-size: 30px 60px
-
-%image-phone
-  background-image: url('../images/phone.png')
-  background-repeat: no-repeat
-  background-size: 30px 60px
-
-%image-details
-  background-image: url('../images/details_icon.png')
-  background-repeat: no-repeat
-  background-size: 18px 23px
-
-// App stores
-%app-download-app
-  display: inline-block
-  margin: 0px 10px 20px 0
-
-%apple-store-button
-  background-image: url('../images/app_store.png')
-  background-repeat: no-repeat
-  height: 50px
-  width: 174px
-
-%google-play-button
-  background-image: url('../images/google_play.png')
-  background-repeat: no-repeat
-  height: 51px
-  width: 154px
-
-%windows-store-button
-  background-image: url('../images/windows_store.png')
-  background-repeat: no-repeat
-  height: 50px
-  width: 196px
-
-%apple-store-button-small
-  background-image: url('../images/apple_app_store_small.png')
-  background-repeat: no-repeat
-  height: 40px
-  width: 139px
-
-%google-play-button-small
-  background-image: url('../images/google_play_small.png')
-  background-repeat: no-repeat
-  height: 40px
-  width: 121px
-
-%windows-store-button-small
-  background-image: url('../images/windows_store_small.png')
-  background-repeat: no-repeat
-  height: 40px
-  width: 196px
-
 // Blocks
 .opening-block
-  background-image: url('../images/bg_image_mc.jpg')
-  background-position: 50% 0
+  background-image: url('../images_dgb/girl.png')
+  background-position: 50% 100%
   background-repeat: no-repeat
-  background-size: cover
 
-  .opening-phone-bg
-    background-image: url('../images/phone_bg_mc.png')
-    background-position: 50% 100%
-    background-repeat: no-repeat
-    min-height: 580px
+  @media (max-width: 800px)
+    background-image: none
 
-    @media #{$small-only}
-      background-image: none
-      min-height: 0
-
-  .opening-header
-    padding: 40px 0 0
-
-    @media #{$small-only}
-      padding: 30px 0 0
-
-  .opening-header-logo
-    background-image: url('../images/logo.png')
-    background-position: 50% 50%
-    background-repeat: no-repeat
-    height: 35px
+  .opening-logo
+    background-image: url('../images_dgb/logo.jpg')
+    display: block
+    height: 17px
+    margin-top: 30px
     overflow: hidden
     text-indent: -9999px
-    width: 215px
+    width: 95px
 
-    @media #{$small-only}
-      width: 100%
-
-  .opening-header-text
-    @extend %medium-font
-    color: #fff
-    padding: 15px 0 0
-
-    @media #{$small-only}
-      padding: 15px 0 0
-      text-align: center
-
-  .opening-header-buttons
-    padding: 10px 0 0
-    text-align: right
-
-    @media #{$small-only}
-      padding: 20px 0 0
-      text-align: center
-
-  %opening-header-button
-    @extend %small-font
-    background-color: #fff
-    border-radius: 50px
-    color: #222
-    display: inline-block
-    line-height: 30px
-    margin-bottom: 15px
-    margin-left: 15px
-    padding: 0 25px 0 0px
-    text-align: left
-
-    @media #{$small-only}
-      margin: 10px
-
-    &:before
-      background-position: 12px 50%
-      background-repeat: no-repeat
-      content: ''
-      display: inline-block
-      height: 30px
-      vertical-align: top
-      width: 35px
-
-  .opening-header-button-en
-    @extend %opening-header-button
-
-    &:before
-      background-image: url('../images/gb_flag.png')
-
-  .opening-header-button-fr
-    @extend %opening-header-button
-
-    &:before
-      background-image: url('../images/fr_flag.png')
-
-  .opening-header-button-ru
-    @extend %opening-header-button
-
-    &:before
-      background-image: url('../images/ru_flag.png')
-
-  .opening-title
+  .opening-text
     @extend %large-font
     color: #fff
-    font-weight: 500
-    letter-spacing: 0em
-    margin: 30px 0 50px
+    margin: 55px 0 110px 0
 
-    @media #{$small-only}
-      margin: 30px 0 35px
-      text-align: center
+.info-block
+  background: #fff
 
-  .opening-subtitle
-    color: #fff
-    font-weight: 500
-    letter-spacing: 0.05em
+  .info-container
+    @extend %small-font
 
-    @media #{$small-only}
-      margin: 30px 0 35px
-      text-align: center
-
-  .adlib-block
-    .adlib
-      background-image: url('../images/adlib.png')
-      background-repeat: no-repeat
-      height: 143px
-      margin: -15px -20px 30px -20px
-      width: 140px
-      .top
-        color: #00aeef
-        display: inline-block
-        font-weight: 500
-        margin-top: 20px
-        text-align: center
-        width: 110px
-      .bottom
-        color: #00aeef
-        display: inline-block
-        font-weight: 500
-        margin-top: 65px
-        text-align: center
-        width: 110px
+    .info-first
+      padding: 80px 60px 10px
 
       @media #{$small-only}
-        display: inline-block
-        margin-top: 0
-        margin-bottom: 20px
-        text-align: center
+        padding: 40px 0 5px
 
-    @media #{$small-only}
-      text-align: center
+    .info-bold
+      @extend %medium-font
+      border-bottom: 2px solid #00aeef
+      border-top: 2px solid #00aeef
+      font-style: italic
+      padding: 15px 60px 15px
 
-  .app-download-description-apps
-    @media #{$small-only}
-      text-align: center
+      @media #{$small-only}
+        padding: 10px 0 10px
 
-.about-block
-  background: #e8e8e8
-  padding: 6em 0
+    .info-second
+      padding: 35px 60px 20px
 
-  @media #{$small-only}
-    padding: 2em 0 2em 0
+      @media #{$small-only}
+        padding: 20px 0 10px
 
-  h2.title
-    @extend %large-font
-    background-color: #fff
-    border: 10px solid #fff
-    color: #00aeef
-    font-weight: bold
-    letter-spacing: 0em
-    margin: 0 auto
-    text-align: center
+    p, ul
+      @extend %small-font
 
-  .subtitle
-    padding-top: 40px
-    p
-      @extend %large-font
-      font-weight: 500
-      letter-spacing: 0em
-      margin: 0
-      text-align: center
+    li
+      padding-top: 10px
 
-.schedule-block
-  padding: 6em 0
+    ul
+      padding-left: 30px
 
-  @media #{$small-only}
-    padding: 2em 0 2em 0
+.registration-block
+  background: #f0f0f0
 
-  .title
-    @extend %large-font
-    color: #fff
-    font-weight: normal
-    margin: 0
-    text-align: center
-
-  .day-title
-    color: #fff
-    font-size: em-calc(24px)
-    font-weight: normal
-    margin: 2em 0 0 0
-
-    @media #{$small-only}
-      font-size: em-calc(18px)
-
-  .event
-    @extend %small-font
-    margin: 2em 0 0 0
-
-    .event-title
-      color: #fff
-      padding: 5px 0
-
-    .event-text
-      font-weight: bold
-      padding: 5px 0
-
-.contact-block, .video-block
-  background: #fff
-  padding-bottom: 90px
-
-  @media #{$small-only}
-    padding-bottom: 50px
-
-  .title
-    @extend %large-font
-    font-weight: 500
-    margin-bottom: 0
-    margin-top: 60px
-    padding-bottom: 20px
-    text-align: center
-
-    @media #{$small-only}
-      margin-top: 40px
-      padding-bottom: 20px
-
-  .small-title
-    color: #c0c0c0
+  .registration-container
     font-size: 24px
-    font-weight: 500
-    letter-spacing: 0.07em
-    margin-bottom: 25px
-    margin-top: 15px
-    text-align: center
+    line-height: 60px
+    padding: 24px 60px
 
-    @media #{$small-only}
-      font-size: 16px
-      margin-bottom: 17px
-      margin-top: 15px
-
-  .person
-    font-size: 16px
-    font-weight: bold
-    line-height: 1.9em
-    padding: 0 10px
-    text-align: center
-
-    @media #{$small-only}
-      padding: 0
-
-  .text
-    font-size: 16px
-    line-height: 1.9em
-    padding: 0 10px
-    text-align: center
-
-    @media #{$small-only}
-      margin-bottom: 35px
-      padding: 0
-
-.video-block
-  padding-bottom: 40px
-
-  .video-wrapper
-    position: relative
-    padding-bottom: 56.25%
-
-    height: 0
-    iframe
-      position: absolute
-      top: 0
-      left: 0
-      width: 100%
-      height: 100%
-
-  .tour-buttons
-    margin: 50px 0 0 0
-    text-align: center
-
-    @media #{$small-only}
-      margin: 25px 0 0 0
-
-  %tour-buttons-item
-    @extend %small-font
-    background-color: #00aeef
-    border-radius: 50px
-    color: #fff
-    display: inline-block
-    letter-spacing: 0em
-    line-height: 46px
-    margin: 10px 25px
-    padding: 0 25px 0 10px
-    text-align: left
-
-    @media #{$small-only}
-      margin: 10px 15px
-
-    &:before
-      background-position: 0 0px
-      content: ''
-      display: inline-block
-      height: 30px
-      margin-left: 3px
-      margin-top: 7px
-      vertical-align: top
-      width: 40px
-
-  .tour-buttons-item--download
-    @extend %tour-buttons-item
-
-    &:before
-      @extend %image-phone
-
-  .tour-buttons-item--preview
-    @extend %tour-buttons-item
-
-    &:before
-      @extend %image-eye
-
-  .small-block
-    @extend %small-font
-    border: none
-    font-size: 15px
-    line-height: 1.7em
-    padding: 1em 0
-
-    .nowrap
-      white-space: nowrap
-
-  @media #{$small-only}
-    .small-block
-      padding: 0.5em 0
-
-.callout-block
-  background-color: #f0f0f0
-  color: #000
-  padding: 30px 0 25px 0
-
-  .title
-    font-weight: normal
-    letter-spacing: 0.07em
-    line-height: 1.25em
-    text-align: center
-
-.footer-block
-  .title
-    @extend %large-font
-    color: #fff
-    font-weight: 100
-    margin: 40px 0
-    text-align: center
-
-    @media #{$small-only}
-      margin-top: 30px
-      margin-bottom: 40px
-
-    .bold
-      font-weight: normal
-
-    a
+    .link
+      background: #fd6d3b
+      border-radius: 3px
       color: #fff
-      text-decoration: none
+      display: inline-block
+      margin-right: 20px
+      padding: 0 30px
 
-      &:hover
-        text-decoration: underline
-
-.app-download-app--apple
-  @extend %app-download-app
-  @extend %apple-store-button
-
-.app-download-app--google
-  @extend %app-download-app
-  @extend %google-play-button
-
-.app-download-app--windows
-  @extend %app-download-app
-  @extend %windows-store-button
-
-.app-download-image
-  width: 384px
-  height: 478px
-  position: absolute
-  bottom: 0px
-  right: -45px
+    @media #{$small-only}
+      padding: 15px 0
+      font-size: 18px
+      line-height: 35px
